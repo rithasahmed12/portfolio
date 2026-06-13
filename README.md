@@ -39,75 +39,7 @@ and a downloadable resume.
 | Forms / email | Web3Forms |
 | Hosting | Vercel |
 
----
 
-## Getting Started
-
-```bash
-# 1. Install dependencies
-npm install
-
-# 2. Create your environment file (see below): .env.local
-
-# 3. Run the dev server
-npm run dev
-```
-
-Open http://localhost:3000 in your browser.
-
-### Scripts
-
-| Command | Description |
-|---|---|
-| `npm run dev` | Start the development server |
-| `npm run build` | Create a production build |
-| `npm run start` | Serve the production build |
-| `npm run lint` | Run ESLint |
-
----
-
-## Environment Variables
-
-The contact form uses [Web3Forms](https://web3forms.com/). Create a free access key (enter your
-email at web3forms.com) and add it to a `.env.local` file in the project root:
-
-```env
-NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY=your-web3forms-access-key
-```
-
-> `.env.local` is gitignored. When deploying, add the same variable in your hosting provider's
-> environment settings (e.g. Vercel -> Project -> Settings -> Environment Variables).
-
----
-
-## Project Structure
-
-```
-app/                 # Next.js App Router (layout, page, global styles)
-components/
-  sections/          # Hero, About, Skills, Projects, Experience, Contact
-  ui/                # Reusable UI primitives (Radix-based)
-  navbar.tsx         # Top navigation + resume modal trigger
-  whatsapp-button.tsx
-  resume-modal.tsx
-  particle-background.tsx
-  cursor-glow.tsx
-public/
-  projects/          # Project screenshots
-  Rithas_Ahmed_Resume.pdf
-```
-
----
-
-## Deployment (Vercel)
-
-1. Push the repo to GitHub.
-2. Import the repo at https://vercel.com/new
-3. Set the **Project Name** to `rithas` (this produces `rithas.vercel.app`).
-4. Add the `NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY` environment variable.
-5. Deploy - Vercel auto-detects Next.js. Every push to `main` redeploys automatically.
-
----
 
 ## Contact
 
